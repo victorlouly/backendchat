@@ -5,7 +5,9 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const app = express()
 const http = require('http')
+require ( 'dotenv' ) . configuração ( )
 
+consola . log ( process . env )  // remova isso depois de confirmar que está funcionando
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(cors())
